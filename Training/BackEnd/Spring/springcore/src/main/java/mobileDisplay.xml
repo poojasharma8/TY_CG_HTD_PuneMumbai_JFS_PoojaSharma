@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="mobile"
+		class="com.capgemini.springcore.beans.MobileBean">
+		<property name="brand" value="Iphone"/>
+		<property name="modelName" value="8"/>
+		<property name="price" value="70000"/>
+		<property name="mobiledisplay" ref="mobiledisplay"/>
+	</bean>
+
+
+	<bean id="mobiledisplay"
+		class="com.capgemini.springcore.beans.MobileDisplayBean">
+		<property name="displaySize" value="11" />
+		<property name="resolution" value="1080*720" />
+	</bean>
+</beans>
+	

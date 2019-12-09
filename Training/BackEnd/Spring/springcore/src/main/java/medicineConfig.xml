@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- configuration for List -->
+	<!-- <bean id="medicine" class="com.capgemini.springcore.beans.Medicine"> 
+		<property name="name" value="Crocin" /> <property name="price" value="50.89" 
+		/> <property name="type" value="Allopathic" /> <property name="drugs"> <list> 
+		<value>Abc1</value> <value>Paracetamol</value> <value>Xyz2</value> </list> 
+		</property> </bean> -->
+
+	<!-- configuration for Set -->
+	<bean id="medicine"
+		class="com.capgemini.springcore.beans.Medicine">
+		<property name="name" value="Crocin 650"></property>
+		<property name="price" value="50.89" />
+		<property name="type" value="Painkiller" />
+		<property name="drugs">
+			<set>
+				<value>Abc2</value>
+				<value>paracetamol</value>
+				<value>Xyz2</value>
+			</set>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creating My first form</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" required placeholder="enter name">
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id ="email"  required placeholder="enter email">
+        </div>
+        <div>
+            <label for="mobile">Mobile</label><br>
+            <input type="tel" name="mobile" id ="mobile"  required placeholder="enter mobile">
+        </div>
+        <div>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name ="gender" id="gender">Male
+            <input type="radio" name ="gender" id="gender">Female
+            <input type="radio" name ="gender" id="gender">Others
+        </div>
+        <div>
+            <label for="month">Joining Month</label><br>
+            <select name="name" id="month">
+                <option value=""selected disabled>Select</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="Aug">Aug</option>
+                <option value="Sept">Sept</option>
+                <option value="Oct">oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name ="chk" id ="chk">
+            <label for="chk">I Agree</label>
+        </div>
+        <div>
+            <input type="submit" value="Submit">&nbsp;
+            <input type="reset" value="Reset">
+        </div>
+
+    
+    </form>
+</body>
+</html>
